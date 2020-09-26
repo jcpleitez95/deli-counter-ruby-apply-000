@@ -14,9 +14,12 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
-  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
+number = 0
+
+def take_a_number(katz_deli)
+  number += 1
+  katz_deli << number
+  puts "Welcome. You are number #{number} in line."
 end
 
 def now_serving(katz_deli)
